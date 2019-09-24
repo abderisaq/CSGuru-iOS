@@ -20,19 +20,19 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ncr-0V-dCq" customClass="DesignableView" customModule="CS_Guru" customModuleProvider="target">
-                                <rect key="frame" x="72" y="305.5" width="270" height="285"/>
+                                <rect key="frame" x="72" y="298" width="270" height="300"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nOZ-DQ-NB0">
-                                        <rect key="frame" x="10" y="10" width="250" height="260"/>
+                                        <rect key="frame" x="20" y="20" width="230" height="260"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cs_guru_logo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n4p-TZ-9gu">
-                                                <rect key="frame" x="0.0" y="0.0" width="250" height="160"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cs_guru_logo" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n4p-TZ-9gu">
+                                                <rect key="frame" x="0.0" y="0.0" width="230" height="160"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="160" id="H4j-L3-2Gq"/>
                                                 </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eel-fO-0SH" customClass="DesignableButton" customModule="CS_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="170" width="250" height="40"/>
+                                                <rect key="frame" x="0.0" y="170" width="230" height="40"/>
                                                 <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="ioM-6k-C3n"/>
@@ -69,7 +69,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hjb-Co-lcf" customClass="DesignableButton" customModule="CS_Guru" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="220" width="250" height="40"/>
+                                                <rect key="frame" x="0.0" y="220" width="230" height="40"/>
                                                 <color key="backgroundColor" red="0.88686159537120113" green="0.89318503897383239" blue="0.91215536978172596" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                                 <size key="titleShadowOffset" width="1" height="1"/>
@@ -107,13 +107,13 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="270" id="8lM-Fz-GI4"/>
-                                    <constraint firstAttribute="trailing" secondItem="nOZ-DQ-NB0" secondAttribute="trailing" constant="10" id="FyG-db-3Y7"/>
-                                    <constraint firstAttribute="height" constant="285" id="ngb-7E-smF"/>
-                                    <constraint firstItem="nOZ-DQ-NB0" firstAttribute="leading" secondItem="Ncr-0V-dCq" secondAttribute="leading" constant="10" id="s0P-qp-t7o"/>
-                                    <constraint firstItem="nOZ-DQ-NB0" firstAttribute="top" secondItem="Ncr-0V-dCq" secondAttribute="top" constant="10" id="wQ2-IY-bSZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="nOZ-DQ-NB0" secondAttribute="trailing" constant="20" id="FyG-db-3Y7"/>
+                                    <constraint firstAttribute="height" constant="300" id="ngb-7E-smF"/>
+                                    <constraint firstItem="nOZ-DQ-NB0" firstAttribute="leading" secondItem="Ncr-0V-dCq" secondAttribute="leading" constant="20" id="s0P-qp-t7o"/>
+                                    <constraint firstItem="nOZ-DQ-NB0" firstAttribute="top" secondItem="Ncr-0V-dCq" secondAttribute="top" constant="20" id="wQ2-IY-bSZ"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
