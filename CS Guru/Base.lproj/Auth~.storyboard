@@ -463,7 +463,7 @@
             </objects>
             <point key="canvasLocation" x="2880.8000000000002" y="18.440779610194905"/>
         </scene>
-        <!--View Controller-->
+        <!--Top Scores-->
         <scene sceneID="Bk4-3a-Hn6">
             <objects>
                 <viewController id="BTF-oQ-tvR" sceneMemberID="viewController">
@@ -473,13 +473,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="IpX-qx-Sie"/>
                     </view>
-                    <navigationItem key="navigationItem" id="sDs-6o-8w9"/>
+                    <navigationItem key="navigationItem" title="Top Scores" id="sDs-6o-8w9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fCd-Vx-xkI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3825" y="-64"/>
         </scene>
-        <!--View Controller-->
+        <!--Setting-->
         <scene sceneID="Oym-Bi-Omw">
             <objects>
                 <viewController id="wdG-9j-F66" sceneMemberID="viewController">
@@ -489,13 +489,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="her-77-tfk"/>
                     </view>
-                    <navigationItem key="navigationItem" id="W7g-X0-KH3"/>
+                    <navigationItem key="navigationItem" title="Setting" id="W7g-X0-KH3"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R5p-Uv-Iwn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3825" y="611"/>
         </scene>
-        <!--View Controller-->
+        <!--Scores-->
         <scene sceneID="wkU-TX-KLj">
             <objects>
                 <viewController id="4M2-K5-laP" sceneMemberID="viewController">
@@ -505,7 +505,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="t9Q-bq-vix"/>
                     </view>
-                    <navigationItem key="navigationItem" id="8Pe-e8-4s9"/>
+                    <navigationItem key="navigationItem" title="Scores" id="8Pe-e8-4s9"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gra-iF-v5j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
