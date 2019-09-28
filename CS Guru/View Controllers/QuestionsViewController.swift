@@ -10,6 +10,10 @@ import UIKit
 
 class QuestionsViewController: ViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var tableView: UITableView!
+    
+//    let selectedRow
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
