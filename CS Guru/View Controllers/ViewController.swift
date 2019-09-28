@@ -13,11 +13,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "LOGOUT", style: .done, target: self, action: #selector(addTask))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "LOGOUT", style: .done, target: self, action: #selector(logout))
+        
+        view.backgroundColor = UIColor.white
+        
 
     }
     
-    @objc func addTask() {
+    @objc func logout() {
         
     }
 

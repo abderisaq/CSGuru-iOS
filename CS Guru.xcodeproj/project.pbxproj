@@ -67,12 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				160DD4D42339D4AD0011326C /* AppDelegate.swift */,
+				160DD4E62339D8440011326C /* DesignableClasses.swift */,
 				16938A41233C6ACA0055D554 /* View Controllers */,
 				160DD4D82339D4AD0011326C /* Main.storyboard */,
 				160DD4DB2339D4B10011326C /* Assets.xcassets */,
 				160DD4DD2339D4B10011326C /* LaunchScreen.storyboard */,
 				160DD4E02339D4B10011326C /* Info.plist */,
-				160DD4E62339D8440011326C /* DesignableClasses.swift */,
 			);
 			path = "CS Guru";
 			sourceTree = "<group>";
@@ -324,7 +324,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tarabi.CS-Guru";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -342,7 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tarabi.CS-Guru";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
