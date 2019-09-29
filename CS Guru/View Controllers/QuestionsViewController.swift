@@ -13,14 +13,26 @@ class QuestionsViewController: ViewController, UITableViewDelegate, UITableViewD
     let questionsList = ["Algorithm", "Data Structures", "C#", "PHP"]
     let choicesList = [["Cheese", "Cat", "Egg"], ["Fanta", "Lift", "Coke"], ["Cheese", "Cat", "Egg"], ["Fanta", "Lift", "Coke"]]
     
-    var selectedElement = [Int : String]()
+    var selectedOption = [Int : Int]()
     
     @IBOutlet weak var tableView: UITableView!
     
-//    let selectedRow
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    
+    @IBAction func submitAnswers(_ sender: DesignableButton) {
+        
+        if selectedOption.count == questionsList.count {
+            self.performSegue(withIdentifier: "ResultVC", sender: sender)
+        } else {
+            let alert = UIAlertController(title: "Warning!", message: "Please answer all questions", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "cancel", style: .cancel, handler: nil))
+            self.present(alert, animated: true)
+        }
+        
+        
     }
     
     // Section
@@ -32,7 +44,7 @@ class QuestionsViewController: ViewController, UITableViewDelegate, UITableViewD
         return questionsList[section]
     }
     
-    // Sub-section
+    // Rows in the section
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return choicesList[section].count
     }
@@ -41,76 +53,32 @@ class QuestionsViewController: ViewController, UITableViewDelegate, UITableViewD
         let cell = UITableViewCell()
         
         cell.textLabel?.text = choicesList[indexPath.section][indexPath.row]
-        
-//        "Options number \(1 + indexPath.row % 5)"
-        
+            
         return cell
     }
     
 
-    
+    // Check or un-check an option from list
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
         let section = indexPath.section
-        let data = choicesList[section][indexPath.row]
 
-//        if let previousItem = selectedElement[section] {
-//            if previousItem == data {
-//                selectedElement.removeValue(forKey: section)
-//                return
-//            }
-//        }
-//        selectedElement.updateValue(data, forKey: section)
-
-
-//        if tableView.cellForRow(at: indexPath)?.accessoryType == UITableViewCell.AccessoryType.checkmark {
-        
-        if selectedElement[section] == nil {
-            tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
-            selectedElement.updateValue(data, forKey: section)
-            tableView.deselectRow(at: indexPath, animated: true)
-        } else {
-            // re-draw
-            
-            // un-Check the current
-            tableView.cellForRow(at: indexPath)?.accessoryType = .none
-            selectedElement.removeValue(forKey: section)
-            tableView.deselectRow(at: indexPath, animated: true)
+        if selectedOption[section] != nil {
+            let previousSelection = selectedOption[section]
+            selectedOption.removeValue(forKey: section)
+            tableView.cellForRow(at: [section, previousSelection!])?.accessoryType = .none
+            //return
         }
-        
-        
-//        if selectedElement[section] == data {
-//            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCell.AccessoryType.none
-//            selectedElement.removeValue(forKey: section)
-//            tableView.deselectRow(at: indexPath, animated: true)
-//        } else {
-//            tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCell.AccessoryType.checkmark
-//            selectedElement.updateValue(data, forKey: section)
-//            tableView.deselectRow(at: indexPath, animated: true)
-//        }
+        selectedOption.updateValue(indexPath.row, forKey: section)
+        tableView.cellForRow(at: indexPath)?.accessoryType = .checkmark
 
-        print(selectedElement)
     }
     
-    
-    
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let section = indexPath.section
-//        let data = choicesList[section][indexPath.row]
-//        selectedElement.updateValue(data, forKey: section)
-//        tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCell.AccessoryType.checkmark
-//        print(selectedElement)
-//    }
-//
-//    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-//        let section = indexPath.section
-//        selectedElement.removeValue(forKey: section)
-//        tableView.cellForRow(at: indexPath)?.accessoryType = UITableViewCell.AccessoryType.none
-//        print(selectedElement)
-//    }
-    
-
-    
-    
+    // Show the selected options when scrolling up or down
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        for item in selectedOption {
+            tableView.cellForRow(at: [item.key, item.value])?.accessoryType = .checkmark
+        }
+    }
 
 }

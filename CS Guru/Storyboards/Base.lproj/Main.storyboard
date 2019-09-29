@@ -164,7 +164,7 @@
         <!--SIGN UP-->
         <scene sceneID="qkn-lN-EKC">
             <objects>
-                <viewController title="SIGN UP" modalPresentationStyle="fullScreen" id="Atm-NF-fHr" sceneMemberID="viewController">
+                <viewController title="SIGN UP" modalPresentationStyle="formSheet" id="Atm-NF-fHr" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Ay-O7-8Nk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -181,7 +181,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR MESSAGE GOES HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsQ-fQ-5pA">
                                         <rect key="frame" x="0.0" y="210" width="335" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nga-XJ-L0d">
@@ -240,7 +240,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="9RC-Su-X9c" kind="show" id="l6N-oZ-Az3"/>
+                                            <segue destination="9RC-Su-X9c" kind="showDetail" id="l6N-oZ-Az3"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -263,7 +263,7 @@
         <!--LOGIN-->
         <scene sceneID="5rR-go-u29">
             <objects>
-                <viewController title="LOGIN" modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="avc-pR-QtP" sceneMemberID="viewController">
+                <viewController title="LOGIN" id="avc-pR-QtP" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Xz-0v-jUg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -280,7 +280,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ERROR MESSAGE GOES HERE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdB-0S-PT5">
                                         <rect key="frame" x="0.0" y="210" width="335" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="EMAIL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VTN-jS-SkL">
@@ -330,7 +330,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="9RC-Su-X9c" kind="show" id="YZG-pM-Wyp"/>
+                                            <segue destination="9RC-Su-X9c" kind="showDetail" id="YZG-pM-Wyp"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -370,7 +370,7 @@
         <!--CS Guru-->
         <scene sceneID="Zdn-Ma-h04">
             <objects>
-                <viewController id="DCJ-HL-6VO" customClass="MainMenuViewController" customModule="CS_Guru" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" modalPresentationStyle="fullScreen" id="DCJ-HL-6VO" customClass="MainMenuViewController" customModule="CS_Guru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6TS-aK-LIk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

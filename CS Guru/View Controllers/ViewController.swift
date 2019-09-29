@@ -22,6 +22,17 @@ class ViewController: UIViewController {
     
     @objc func logout() {
         
+        //self.dismiss(animated: true, completion: {});
+        //self.navigationController!.popViewController(animated: true);
+        
+        //self.navigationController!.popToRootViewController(animated: true)
+        
+        //self.view.window?.rootViewController?.dismiss(animated: true, completion: nil)
+
+        if let appDelegate = UIApplication.shared.delegate as? AppDelegate {
+            appDelegate.window?.rootViewController?.dismiss(animated: true, completion: nil)
+            (appDelegate.window?.rootViewController as? UINavigationController)?.popToRootViewController(animated: true)
+        }
     }
 
 }
