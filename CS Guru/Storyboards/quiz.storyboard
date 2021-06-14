@@ -172,17 +172,17 @@
                     <navigationItem key="navigationItem" id="G0k-7F-s0i"/>
                     <connections>
                         <outlet property="tableView" destination="xWE-2n-iTL" id="TgW-BE-0s7"/>
-                        <segue destination="Bri-X6-f5g" kind="showDetail" identifier="ScoreResult" id="IGh-3v-t1Q"/>
+                        <segue destination="Bri-X6-f5g" kind="showDetail" identifier="QuestionsResult" id="IGh-3v-t1Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cG-N1-VhU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4881" y="-1231"/>
         </scene>
-        <!--Score Result-->
+        <!--Questions Result-->
         <scene sceneID="zyg-qq-mDE">
             <objects>
-                <viewController title="Score Result" modalPresentationStyle="fullScreen" id="Bri-X6-f5g" customClass="QuestionsViewController" customModule="CS_Guru" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Questions Result" modalPresentationStyle="fullScreen" id="Bri-X6-f5g" customClass="QuestionsViewController" customModule="CS_Guru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zNN-dD-lcP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
