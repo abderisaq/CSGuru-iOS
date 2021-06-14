@@ -25,7 +25,7 @@ class QuestionsViewController: ViewController, UITableViewDelegate, UITableViewD
     @IBAction func submitAnswers(_ sender: DesignableButton) {
         
         if selectedOption.count == questionsList.count {
-            self.performSegue(withIdentifier: "ResultVC", sender: sender)
+            self.performSegue(withIdentifier: "ScoreResult", sender: sender)
         } else {
             let alert = UIAlertController(title: "Warning!", message: "Please answer all questions", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "cancel", style: .cancel, handler: nil))
