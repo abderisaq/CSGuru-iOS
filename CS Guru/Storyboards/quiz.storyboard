@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8wo-YN-w95">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Umf-NH-l8d">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -12,13 +12,13 @@
         <!--Categories-->
         <scene sceneID="sYJ-Zv-I59">
             <objects>
-                <viewController id="8wo-YN-w95" customClass="CategoriesViewController" customModule="CS_Guru" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Categories" id="8wo-YN-w95" customClass="CategoriesViewController" customModule="CS_Guru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jd5-M5-jiv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Sll-xp-s66">
-                                <rect key="frame" x="10" y="10" width="355" height="657"/>
+                                <rect key="frame" x="10" y="54" width="355" height="613"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="c72-Bp-U2g">
                                     <size key="itemSize" width="172" height="180"/>
@@ -83,16 +83,32 @@
             </objects>
             <point key="canvasLocation" x="4060" y="-1230"/>
         </scene>
-        <!--Questions View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="ddF-Sa-Sbp">
+            <objects>
+                <navigationController modalPresentationStyle="fullScreen" id="Umf-NH-l8d" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Kru-2u-seb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8wo-YN-w95" kind="relationship" relationship="rootViewController" id="5Ef-OU-Wpt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pUS-Sh-baT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3249" y="-1231"/>
+        </scene>
+        <!--Questions-->
         <scene sceneID="iHL-A0-HIE">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="D7R-gO-753" customClass="QuestionsViewController" customModule="CS_Guru" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Questions" modalPresentationStyle="fullScreen" id="D7R-gO-753" customClass="QuestionsViewController" customModule="CS_Guru" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aoL-HL-7QJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="svi-Zq-Be0">
-                                <rect key="frame" x="10" y="10" width="355" height="647"/>
+                                <rect key="frame" x="10" y="54" width="355" height="603"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZq-CO-41d">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="50"/>
@@ -113,7 +129,7 @@
                                         </subviews>
                                     </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xWE-2n-iTL">
-                                        <rect key="frame" x="0.0" y="60" width="355" height="537"/>
+                                        <rect key="frame" x="0.0" y="60" width="355" height="493"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TVCell" id="6TG-kQ-T5d">
@@ -132,7 +148,7 @@
                                         </connections>
                                     </tableView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="7gd-sb-QBP">
-                                        <rect key="frame" x="0.0" y="607" width="355" height="40"/>
+                                        <rect key="frame" x="0.0" y="563" width="355" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P63-ui-A6D" customClass="DesignableButton" customModule="CS_Guru" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="355" height="40"/>
@@ -169,10 +185,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7My-3v-fAR"/>
                     </view>
-                    <navigationItem key="navigationItem" id="G0k-7F-s0i"/>
+                    <navigationItem key="navigationItem" title="Questions" id="G0k-7F-s0i"/>
                     <connections>
                         <outlet property="tableView" destination="xWE-2n-iTL" id="TgW-BE-0s7"/>
-                        <segue destination="Bri-X6-f5g" kind="showDetail" identifier="QuestionsResult" id="IGh-3v-t1Q"/>
+                        <segue destination="Bri-X6-f5g" kind="show" identifier="QuestionsResult" id="BDt-5x-Lpa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1cG-N1-VhU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -200,6 +216,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QYm-7c-Wwe"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Result" id="fim-ZP-MQo">
+                        <barButtonItem key="backBarButtonItem" title="nil" id="dpC-x4-DNr"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GEN-e8-1Mv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
